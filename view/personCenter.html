@@ -1,0 +1,35 @@
+<div class="personCenter">
+	<div class="personCenter-top">
+		<div class="container clear">
+			<div class="person-img fl">
+				<img ng-src="{{message.headImg}}" alt="">
+				<div class="clear">
+					<img class="fl" src="img/personimg-message.png" alt="">
+				    <img class="fl" src="img/personimg-person.png" alt="">
+				    <img class="fl" src="img/personimg-phone.png" alt="">
+				</div>
+			</div>
+			<div class="personCenter-top-right fl f14">
+				<p class="lh4"><span class="f18 fb">用户{{message.name}}</span>下午好</p>
+				<div class="safe clear">
+					<p class="fl">账户安全等级：</p><div class="progress-total fl"><div class="progress" ng-style="{width:'60%'}"></div></div><span class="fl">中</span>
+				</div>
+				<div class="lh3">
+					上次登录时间：2015年9月9日
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container clear">
+		<div class="personCenter-sidebar fl f14 lh2">
+			<ul>
+				<li><a ui-sref-active='active'  ui-sref="personCenter.personHomepage">个人主页</a></li>
+				<li><a ui-sref-active='active' ui-sref="personCenter.personMessage">个人信息</a></li>
+				<li><a ui-sref-active='active' ui-sref="personCenter.personSafe">安全设置</a></li>
+				<li><a ui-sref-active='active' ui-sref="personCenter.personCircle">关注的圈子</a></li>
+				<li><a ui-sref-active='active' ui-sref="personCenter.personBuy">购买记录</a></li>
+			</ul>
+		</div>
+		<div ui-view='' class="personCenter-main fl"></div>
+	</div>
+</div>

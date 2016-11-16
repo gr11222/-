@@ -1,0 +1,41 @@
+<div class="login-page">
+	<div class="login-page-main">
+		<h1 class="login-title">注册</h1>
+		<form  action="" name='registerForm' ng-model='registerForm' novalidate>
+		<div class="loginTel">
+			<input type="text" placeholder="请输入您的手机号" name='registerTel' ng-model='registerTel' ng-pattern='/^(1[^012][0-9]{9})$/' required>
+			<span ng-show='registerForm.registerTel.$dirty && registerForm.registerTel.$error.pattern'>您输入的号码有误，请检查
+			</span>
+			<span ng-show='registerForm.registerTel.$dirty && registerForm.registerTel.$error.required'>您输入的号码为空
+			</span>
+		</div>
+		<div class="loginCode">
+			<input type="text" name="registerCode" ng-model='registerCode'  value="" placeholder="输入验证码" ng-minlength='4' ng-maxlength='4' required>
+			<span ng-show='registerForm.registerCode.$dirty && registerForm.registerCode$error.required'>验证码错误</span>
+			<button type="button" ng-click='code()' ng-disabled="disabled">{{count}}</button>
+		</div>	
+		<div class="loginPassword">
+			<input type="password" name="registerPassword" ng-model='registerPassword'  value="" placeholder="请输入您的密码" ng-minlength='6' ng-maxlength='18' required>
+			<span ng-show='registerForm.registerPassword.$dirty && registerForm.registerPassword.$error.required'>密码不能为空</span>
+			<span ng-show='registerForm.registerPassword.$error.minlength && registerForm.registerPassword.$dirty'>密码输入错误</span>
+		</div>		
+			<a class="page-login white block" href="#" >注册</a>
+			<div class="rememberMe">
+				<input  type="checkbox" name="" value="" placeholder="">
+			    <span>同意《全民创造用户协议》</span>
+			</div>
+			
+			<div class="otherLogin">
+				<span>第三方登录</span>
+				<div class="otherLogin-logo">
+					 <a href="#" title=""><img src="img/wechat.png" alt=""></a>
+			         <a href="#" title=""><img src="img/qq.png" alt=""></a>
+			         <a href="#" title=""><img src="img/sina.png" alt=""></a>
+				</div> 
+			</div>
+	</div>
+		<div class="register">
+			<span>已有账号？</span><a ui-sref="login" title="">登录</a>
+		</div>
+	</form>
+</div>

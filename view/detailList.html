@@ -1,0 +1,47 @@
+<div class="detailList-nav">
+	<div class="container">
+		<ul class="clear">
+			<li ng-click="clickFn(-1,'')" ng-class="{'active':-1==index}">全部</li>
+			<li ng-repeat="item in sort" ng-click="clickFn($index,item)" ng-class="{'active':$index==index}">{{item}}</li>
+		</ul>
+		<ul class="clear">
+			<li>筹资中</li>
+			<li>即将结束</li>
+			<li>已结束</li>
+		</ul>
+		<ul class="clear">
+			<li>最新</li>
+			<li>热门</li>
+			<li>结束时间</li>
+		</ul>
+	</div>
+</div>
+<div class="detailList-main">
+	<div class="container clear">
+		<div class="showBox f11 gray lh2" ng-repeat="item in show | filter:sortFn">
+				<a class="block" ui-sref="detail({id:item.id})"><img ng-src="{{item.imgUrl}}" alt=""></a>
+				<h1 ><a class="f14 fb black" ui-sref="detail({id:item.id})">{{item.title}}</a></h1>
+				<p>by {{item.author}}</p>
+				<p class="homepage-recommend-detail">{{item.detail}}</p>
+				<p>{{item.sort}}</p>
+				<div class="progress-total">
+						<div class="progress" style="width:{{item.progress}}">
+						</div>
+				</div>
+				<div class="clear">
+						<div class="message">
+							<p class="f16 fb black">{{item.progress}}</p>
+							<p>进度</p>
+						</div>
+						<div class="message">
+							<p class="f16 fb black">{{item.cost}}</p>
+							<p>支持金额</p>
+						</div>
+						<div class="message">
+							<p class="f16 fb black">{{item.day}}</p>
+							<p>剩余天数</p>
+						</div>
+				</div>	
+			</div>
+	</div>	
+</div>

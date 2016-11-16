@@ -1,0 +1,25 @@
+<div class="userMessage f12 gray">
+	<div class="changeHeadImg clear">
+		<span class="black fl">修改头像</span>
+		<img class="fl" ng-src="img/changeHeadImg.png" alt="">
+	</div>
+	<div class="userName">
+		<span class="black">用户昵称</span>	
+		<input type="text" name="" value="" placeholder="">
+	</div>
+	<div class="userSex">
+		<span class="black">性别</span>
+		<label><input type="radio" name="sex" value="man" >男</label>
+		<label><input type="radio" name="sex" value="woman" >女</label>
+	</div>
+	<div class="attention clear">
+		<p class="black fl">关注圈子</p>
+		<div ng-repeat="item in sort" class="checkBox fl clear " >
+			<div class="checkBoxCheck fl " ng-class="{'checked':arr[$index]}" ng-click='checkFn($index)'>
+				
+			</div>
+			<p class="fl">{{item}}</p>
+		</div>
+	</div>
+</div>
+

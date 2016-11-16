@@ -1,0 +1,42 @@
+.userMessage {
+  background: #fff;
+  padding: 40px 420px 60px 60px;
+  line-height: 30px;
+}
+.userMessage > div {
+  margin-bottom: 20px;
+}
+.userMessage .black {
+  margin-right: 20px;
+  text-align: right;
+  width: 55px;
+  display: inline-block;
+}
+.userMessage .changeHeadImg img {
+  width: 70px;
+}
+.userMessage .changeHeadImg span {
+  line-height: 70px;
+}
+.userMessage .userSex label {
+  margin-right: 20px;
+}
+.userMessage .attention > p {
+  height: 80px;
+}
+.userMessage .attention .checkBoxCheck {
+  height: 10px;
+  width: 10px;
+  border: 1px solid #dbdbe0;
+  margin-top: 10px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.userMessage .attention .checkBoxCheck.checked {
+  background: url(img/checked.png) no-repeat 100%;
+  border: 1px solid #ff4200;
+}
+.userMessage .attention .checkBox {
+  margin-right: 10px;
+  width: 70px;
+}

@@ -1,0 +1,64 @@
+.personHomepage-my {
+  padding: 30px 40px 60px 30px;
+  background: #fff;
+}
+.personHomepage-my > p {
+  color: #150b09;
+  border-bottom: 1px solid #d9d9de;
+}
+.personHomepage-my > p span {
+  display: inline-block;
+  width: 5px;
+  height: 28px;
+  background-color: #43aefc;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.personHomepage-my div.show {
+  margin-top: 20px;
+  margin-right: 10%;
+  width: 45%;
+  border: 1px solid #d9d9de;
+  box-sizing: border-box;
+}
+.personHomepage-my div.show img {
+  width: 38%;
+}
+.personHomepage-my div.show .img-right {
+  width: 57%;
+  padding-left: 5%;
+}
+.personHomepage-my div.show .img-right .progress-total {
+  width: 180px;
+  height: 10px;
+  background: #d9d9de;
+  margin: 10px 0px;
+}
+.personHomepage-my div.show .img-right .progress {
+  height: 100%;
+  background: #fe8a18;
+}
+.personHomepage-my div.show .img-right > span {
+  color: #150b09;
+}
+.personHomepage-my div.show:nth-child(2n) {
+  margin-right: 0px;
+}
+.personHomepage-hot {
+  padding: 30px 40px 30px 30px;
+  background: #fff;
+  margin-top: 15px;
+}
+.personHomepage-hot > p {
+  margin-bottom: 20px;
+  color: #150b09;
+  border-bottom: 1px solid #d9d9de;
+}
+.personHomepage-hot > p span {
+  display: inline-block;
+  width: 5px;
+  height: 28px;
+  background-color: #43aefc;
+  margin-right: 10px;
+  vertical-align: middle;
+}

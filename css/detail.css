@@ -1,0 +1,116 @@
+.detail-top {
+  background: #f7fafa;
+  padding: 50px 0px 78px 0px;
+}
+.detail-top > .container > h1,
+.detail-top > .container > p {
+  text-align: center;
+}
+.detail-top .detail-top-main {
+  margin-top: 40px;
+}
+.detail-top .detail-top-main .detail-top-main-left {
+  width: 680px;
+}
+.detail-top .detail-top-main .detail-top-main-right {
+  width: 320px;
+  padding: 55px 0px 50px 0px;
+  border-bottom: 1px solid #d9d9de;
+}
+.detail-top .detail-top-main .detail-top-main-right .fontBold {
+  font-size: 40px;
+}
+.detail-top .detail-top-main .detail-top-main-right p.f14 {
+  margin-bottom: 20px;
+}
+.detail-top .detail-top-main .detail-top-main-right .support-btn {
+  padding: 20px 60px ;
+  background: #ff4200;
+  color: #fff;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.detail-top .detail-top-bottom {
+  padding: 40px 0px 0px 0px;
+}
+.detail-top .detail-top-bottom > p span {
+  padding-right: 20px;
+}
+.detail-top .detail-top-bottom > div > p {
+  margin-top: 35px;
+  width: 680px;
+}
+.detail-top .detail-top-bottom > div > div {
+  margin-top: 35px;
+  width: 320px;
+  text-align: center;
+}
+.detail-top .detail-top-bottom > div > div .author-message {
+  width: 160px;
+  line-height: 250%;
+}
+.detail-top .detail-top-bottom > div > div .author-message a {
+  color: #00a0ff;
+  padding: 0px 10px;
+}
+.detail-top .detail-top-bottom > div > div img {
+  width: 90px;
+}
+.detail-nav {
+  background: #fff;
+  border-bottom: 1px solid #d9d9de;
+}
+.detail-nav li {
+  cursor: pointer;
+  float: left;
+  padding: 0px 10px;
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+.detail-nav li.active {
+  border-bottom: 4px solid #ff4200;
+}
+.detailOf2 {
+  background: #fff;
+  padding: 50px 0px;
+}
+.detailOf2 .detailOf2-left {
+  width: 680px;
+}
+.detailOf2 .detailOf2-right {
+  width: 320px;
+}
+.detailOf2 .detailOf2-right > div {
+  background: #f7fafa;
+  border: 1px solid #dbdbe0;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.detailOf2 .detailOf2-right > div .detailOf2-right1-main {
+  padding: 0px 20px;
+}
+.detailOf2 .detailOf2-right .detailOf2-title {
+  line-height: 50px;
+  padding: 0px 20px;
+  border-bottom: 1px solid #dbdbe0;
+}
+.detailOf2 .detailOf2-right .detailOf2-title .pay {
+  font-size: 15px;
+  font-weight: bold;
+  float: left;
+}
+.detailOf2 .detailOf2-right .detailOf2-title .person {
+  font-size: 12px;
+  color: #ff4200;
+  float: right;
+}
+.detailOf2 .detailOf2-right2 {
+  background: #ffffc9 !important;
+}
+.detailOf2 .detailOf2-right2 > div {
+  margin: 30px 20px;
+}

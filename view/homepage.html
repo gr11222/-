@@ -1,0 +1,106 @@
+<div class="homepage-banner">
+		<ul class="banner-img">
+			<li ng-repeat='img in imgArr' ng-style="{zIndex : showIndex==$index?1:0}" ><a href="#" title=""><img ng-src="{{img}}" alt=""></a></li>
+		</ul>
+		<span ng-click='prev()' class="lt">&lt;</span>
+		<span ng-click='next()' class="gt">&gt;</span>
+		<ul class="banner-mark">
+			<li ng-mouseover='stop($index)'  ng-mouseout='start()' ng-repeat="item in imgArr" ng-class="{active:showIndex==$index}"></li>
+		</ul>
+</div>
+
+<div class="homepage-hot">
+	<div class="container clear">
+		<div ng-repeat="item in show | filter:filterFn | limitTo:1"  class="homepage-hot-left fl">
+			<div class="homepage-hot-top clear">
+				<h1 class="f18 fb fl black" >热门项目</h1>
+				<a ui-sref="detailList" class="f12 fr gray">查看更多</a>
+			</div>
+			<div class="homepage-hot-main clear f12 gray">
+				<img class="fl" ng-src="{{item.imgUrl}}" alt="">
+				<div class="fr">
+					<h1 class="f18 fb black">{{item.title}}</h1>
+					<p class="lh2">by{{item.author}}</p>
+					<p class="homepage-hot-main-detail">{{item.detail}}</p>
+					<span class="lh2">{{item.sort}}</span>
+					<span class="lh2">卫视推荐</span>
+					<div class="progress-total">
+						<div class="progress" style="width:{{item.progress}}">
+							
+						</div>
+					</div>
+					<div class="clear">
+						<div class="message">
+							<p class="f16 fb black">{{item.progress}}</p>
+							<p>进度</p>
+						</div>
+						<div class="message">
+							<p class="f16 fb black">{{item.cost}}</p>
+							<p>支持金额</p>
+						</div>
+						<div class="message">
+							<p class="f16 fb black">{{item.id}}</p>
+							<p>支持者</p>
+						</div>
+						<div class="message">
+							<p class="f16 fb black">{{item.day}}</p>
+							<p>剩余天数</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="homepage-hot-right fr">
+			<ul>
+				<li class="f12 black" ng-repeat="item in sort" ng-click='clickFn(item,$index)' ng-class="{'active':$index==index}">{{item}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="homepage-recommend">
+	<div class="container">
+		<div class="homepage-recommend-top clear">
+			<h1 class="f18 fb fl black" >卫视主推</h1>
+			<a ui-sref="detailList" class="f12 fr gray">查看更多</a>
+		</div>
+		<div class="clear">
+			<div class="showBox f11 gray lh2" ng-repeat="item in show | limitTo:3">
+				<img ng-src="{{item.imgUrl}}" alt="">
+				<h1 class="f14 fb black">{{item.title}}</h1>
+				<p>by {{item.author}}</p>
+				<p class="homepage-recommend-detail">{{item.detail}}</p>
+				<p>{{item.sort}}</p>
+				<div class="progress-total">
+						<div class="progress" style="width:{{item.progress}}">
+						</div>
+				</div>
+				<div class="clear">
+						<div class="message">
+							<p class="f16 fb black">{{item.progress}}</p>
+							<p>进度</p>
+						</div>
+						<div class="message">
+							<p class="f16 fb black">{{item.cost}}</p>
+							<p>支持金额</p>
+						</div>
+						<div class="message">
+							<p class="f16 fb black">{{item.day}}</p>
+							<p>剩余天数</p>
+						</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="homepage-ad">
+	<div class="container clear">
+		<h2 class="home-title fb f18">合作单位</h2>
+		<a class="fl"  href="#"><img src="img/u210.png" alt=""></a>
+		<a class="fl"  href="#"><img src="img/u210-1.png" alt=""></a>
+		<a class="fl"  href="#"><img src="img/u212-1.png" alt=""></a>
+		<a class="fl"  href="#"><img src="img/u212.png" alt=""></a>
+		<a class="fl"  href="#"><img src="img/u214.png" alt=""></a>
+	</div>
+</div>

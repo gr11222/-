@@ -1,0 +1,51 @@
+.personSafe-main {
+  background: #fff;
+  padding: 20px 5% 41px 5%;
+  margin-bottom: 70px;
+  width: 90%;
+}
+.personSafe-main .warning {
+  color: #ff0101;
+}
+.personSafe-main ul > li {
+  padding: 12px;
+  cursor: pointer;
+}
+.personSafe-main ul > li.active {
+  color: #150b09;
+  border-bottom: 2px solid #43aefc;
+}
+.personSafe-main form {
+  margin-top: 38px;
+  line-height: 200%;
+}
+.personSafe-main form .warning {
+  margin-left: 85px;
+  display: inline-block;
+}
+.personSafe-main form input[type*=submit] {
+  margin-left: 85px;
+  display: block;
+  padding: 8px 55px;
+  background: #ff4200;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.personSafe-main form input {
+  line-height: 200%;
+}
+.personSafe-main form .suport {
+  padding-left: 150px;
+  color: skyblue;
+  margin-top: -20px;
+}
+.personSafe-main form > p {
+  margin-bottom: 15px;
+}
+.personSafe-main form > p .leftMessage {
+  display: inline-block;
+  width: 65px;
+  text-align: right;
+  margin-right: 20px;
+}

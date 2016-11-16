@@ -1,0 +1,22 @@
+.login-page{width: 400px;margin: 100px auto 0px auto;border:1px solid #dcdce0;border-radius: 10px;background: #f7fafa;margin-bottom: 75px;}
+.login-page-main{padding: 35px 25px 35px 25px;}
+.login-title{font-size: 20px;font-weight: bold;padding-bottom:34px;}
+.login-page input[type*='text'],.login-page input[type*='password']{width: 90%;line-height: 30px;padding:0px 5% ;border-radius: 8px;margin-bottom: 40px;border:1px solid #dcdce0; }
+.loginTel,.loginPassword{position: relative;}
+.loginTel span,.loginPassword span{position: absolute;left: 10px;top: 45px;color:#ff0000;}
+.loginPassword a{position: absolute;right: 0px;top: 45px;color:#838383;}
+.page-login{text-align: center;width: 100%;line-height: 30px;background: #2bde73;border: none;border-radius: 8px;}
+.rememberMe{margin: 10px 10px 50px 10px;}
+/* .rememberMe input:checked{background: blue;}*/
+.otherLogin{text-align: center;position: relative;}
+.otherLogin span{position: absolute;top:-10px;background: #f7fafa;padding:0px 10px;left: 40%}
+.otherLogin a{margin:0px 5px;display: inline-block;;width: 40px;height: 40px;border-radius: 20px;}
+.otherLogin a:nth-child(1){border: 1px solid lightgreen;}
+.otherLogin a:nth-child(2){border: 1px solid lightblue;}
+.otherLogin a:nth-child(3){border: 1px solid lightpink;}
+.otherLogin a img{width: 60%;padding-left: 20%;padding-top: 20%}
+.otherLogin-logo{padding: 30px 0px 0px 0px;text-align: center;border-top:1px solid #838383;}
+.register{border-top: 1px solid #838383;line-height: 60px;text-align: center;color:#838383;}
+.register a{color:#00a0ff;}
+.loginCode input[type*='text']{width: 60%;display: inline-block;}
+.loginCode button{width: 26%;margin-left: 2%;line-height: 30px;}

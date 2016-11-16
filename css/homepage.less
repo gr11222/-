@@ -1,0 +1,68 @@
+.homepage-banner .banner-img li a{display: block;background: #000;}
+.homepage-banner{position: relative;}
+.homepage-banner .banner-img li{position: absolute;top: 0px;left: 0px;width: 100%;height: 100%}
+.homepage-banner .banner-img li:nth-child(1){position: relative;}
+.homepage-banner .lt,.homepage-banner .gt{font-size: 100px;position: absolute;top: 50%;transform:translateY(-50%);color:rgba(255,255,255,0.5);cursor: pointer;z-index: 2; }
+.homepage-banner .lt{left: 0px;}
+.homepage-banner .gt{right: 0px;}
+.homepage-banner .banner-mark{z-index: 2;bottom: 0px;left: 0px;right: 0px;background-color: rgba(255,255,255,0.4);position: absolute;height: 10px;text-align: center;}
+.homepage-banner .banner-mark li{width: 10px;background-color: #fff;height: 10px;border-radius: 5px;display: inline-block;margin: 0px 5px;vertical-align: top;}
+.homepage-hot{
+	background: #f7fafa;padding-top: 70px;
+	padding-bottom: 110px;
+	.homepage-hot-left{
+		width: 866px;
+		.homepage-hot-main{
+			margin-top: 60px;
+			img{
+				width: 322px;
+			}
+			&>div{
+				width: 512px;
+				.homepage-hot-main-detail{padding: 28px 0px}
+				span{padding-right:20px;}
+				.message{
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	.homepage-hot-right{
+		border-left: 1px solid #dadada;
+		line-height: 270%;
+		li{
+			padding-left: 20px;
+			cursor: pointer;
+			border-left: 1px solid  transparent;
+			&:hover,&.active{
+				border-left: 1px solid #ff4200;
+			}
+		}
+	}
+}
+.homepage-recommend{
+	background: #fff;
+	padding-top: 55px;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #d9d9de;
+	.homepage-recommend-detail{
+		padding: 15px 0;
+	}
+	.homepage-recommend-top{
+		margin-bottom: 50px;
+	}
+}
+.homepage-ad{
+	background: #fff;
+	padding:70px 0px; 
+	h2{
+		margin-bottom: 60px;
+	}
+	a{
+		width: 16%;
+		margin-right: 5%;
+		&:nth-child(6){
+			margin-right: 0px;
+		} 
+	}
+}

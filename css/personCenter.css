@@ -1,0 +1,69 @@
+.personCenter {
+  margin-bottom: 60px;
+  color: #828282;
+}
+.personCenter .personCenter-top {
+  background: #effaff;
+}
+.personCenter .personCenter-top .container {
+  padding: 35px 80px 35px 60px;
+  width: 900px;
+}
+.personCenter .personCenter-top .container .person-img {
+  width: 135px;
+  padding-right: 70px;
+}
+.personCenter .personCenter-top .container .person-img .fl {
+  width: 20%;
+  padding: 6.333%;
+}
+.personCenter .personCenter-top .personCenter-top-right {
+  margin-top: 10px;
+  width: 570px;
+}
+.personCenter .personCenter-top .personCenter-top-right > p {
+  border-bottom: 1px solid #828282;
+}
+.personCenter .personCenter-top .personCenter-top-right .fb {
+  color: #150b09;
+  padding-right: 15px;
+}
+.personCenter .personCenter-top .personCenter-top-right .safe {
+  margin-top: 40px;
+}
+.personCenter .personCenter-top .personCenter-top-right .safe .progress-total {
+  width: 200px;
+  height: 10px;
+  background: #d9d9de;
+  margin: 5px 10px 0px 10px;
+}
+.personCenter .personCenter-top .personCenter-top-right .safe .progress {
+  height: 100%;
+  background: #fe8a18;
+}
+.personCenter .personCenter-top .personCenter-top-right .safe span {
+  color: #fe8a18;
+  padding-top: 2px;
+}
+.personCenter .personCenter-sidebar {
+  text-align: center;
+  background: #fff;
+  padding: 10px 30px ;
+}
+.personCenter .personCenter-sidebar li a {
+  display: inline-block;
+  margin: 20px 0px;
+  border-bottom: 1px #e3e3e7 dashed;
+  color: #828282;
+}
+.personCenter .personCenter-sidebar li a.active {
+  color: #fe8a18;
+  border-bottom: 1px #fe8a18 dashed;
+}
+.personCenter > .container {
+  margin-top: 15px;
+}
+.personCenter .personCenter-main {
+  width: 888px;
+  margin-left: 15px;
+}

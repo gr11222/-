@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='bower_components/angular/angular.js'></script>
+	<script src='bower_components/angular-ui-router/release/angular-ui-router.min.js'></script>
+	<!-- inject:css -->
+
+  <link rel="stylesheet" href="app-66e0d9d57f.min.css">
+
+  <!-- endinject -->
+</head>
+<body>
+	<div class="top clear">
+		<h1 class='top-title'><span class="title1">全民</span><span class="title2">创造</span></h1>
+		<ul class="top-list clear">
+			<li><a href="#/homepage" title="">首页</a></li>
+			<li><a href="#" title="">节目专栏</a></li>
+			<li><a href="#" title="">圈子</a></li>
+		</ul>
+		<div class="top-search">
+			<span class="iconfont icon-search"></span>
+			<input type="text" name="" value="" placeholder="输入您想要搜索的内容">
+		</div>	
+		<div class="login">
+			<a ui-sref="login" title="">登录</a>
+			<a ui-sref="register" title="">注册</a>
+		</div>
+	</div>
+	<!-- top end -->
+	<div class="main" ui-view=''>
+	</div>
+	<!-- footer start -->
+	<div class="footer">
+		<div class="container clear">
+			<ul class="footer-list clear">
+				<li><a href="#" title="">关于全民创造</a></li>
+				<li><a class="footer-list-active" href="#" title="">全民创造用户协议</a></li>
+				<li><a href="#" title="">全民创造风险提示</a></li>
+				<li><a href="#" title="">联系我们</a></li>
+			</ul>
+			<div class="footer-right">
+				<span class="footer-title1">全民</span><span class="footer-title2">创造</span><span class="footer-icon">&copy;2015</span>
+			</div>
+		</div>
+	</div>
+	<!-- inject:js -->
+  
+  <script src="app-397d2053e9.min.js"></script>
+  
+  <!-- endinject -->
+</body>
+</html>

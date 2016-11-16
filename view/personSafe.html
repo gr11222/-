@@ -1,0 +1,56 @@
+<div class="personSafe-main black f12">
+	<ul class="clear gray">
+		<li class="fl" ng-click='stateClick(0)' ng-class='{active:stateId==0}'>修改密码</li>
+		<li class="fl" ng-click='stateClick(1)' ng-class='{active:stateId==1}'>实名认证</li>
+		<li class="fl" ng-click='stateClick(2)' ng-class='{active:stateId==2}'>邮箱认证</li>
+	</ul>
+	<form ng-show='0==stateId' action="" method="get" accept-charset="utf-8">
+		<p>
+			<span class="leftMessage">当前密码</span>
+			<input type="password" name="password" value="">
+		</p>
+		<p>
+			<span class="leftMessage">新密码</span>
+			<input type="password" name="newPassword" value="" >
+			<span class="gray">密码不小于6位</span>
+		</p>
+		<p>
+			<span class="leftMessage">已绑定手机</span>
+			<span class="fb">136****0800</span>
+		</p>
+		<p>
+			<span class="leftMessage">验证码</span>
+			<input type="text" name="code" value="" placeholder="请输入验证码">
+			<button type="button">免费获取验证码</button>
+		</p>
+			<p class="f11 warning">验证码错误，请重新输入！</p>
+		<input type="submit" name="" value="保存">
+	</form>
+	<form ng-show='1==stateId' action="" method="get" accept-charset="utf-8">
+		<p class="suport">身份证认证由adas提供</p>
+		<p>
+			<span class="leftMessage">姓名</span>
+			<input type="text" name="" value="" placeholder="">
+		</p>
+		<p>
+			<span class="leftMessage">身份证号</span>
+			<input type="text" name="" value="" placeholder="">
+		</p>
+			<p class="f11 warning">正确的身份证号</p>
+		<input type="submit" name="" value="保存">
+	</form>
+	<form ng-show='2==stateId' action="" method="get" accept-charset="utf-8">
+		<p>
+			<span class="leftMessage">邮箱地址</span>
+			<input type="text" name="">
+		</p>
+		<p>
+			<span class="leftMessage">验证码</span>
+			<input type="text" name="code" value="" placeholder="请输入验证码">
+			<button type="button">免费获取验证码</button>
+		</p>
+			<p class="f11 warning">验证码错误，请重新输入！</p>
+		<input type="submit" name="" value="保存">
+	</form>
+</div>
+	

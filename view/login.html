@@ -1,0 +1,37 @@
+<div class="login-page">
+	<div class="login-page-main">
+		<h1 class="login-title">登录</h1>
+		<form  action="" name='loginForm' ng-model='loginForm' novalidate>
+		<div class="loginTel">
+			<input type="text" placeholder="请输入您的手机号" name='inputTel' ng-model='inputTel' ng-pattern='/^(1[^012][0-9]{9})$/' required>
+			<span ng-show='loginForm.inputTel.$dirty && loginForm.inputTel.$error.pattern'>您输入的号码有误，请检查
+			</span>
+			<span ng-show='loginForm.inputTel.$dirty && loginForm.inputTel.$error.required'>您输入的号码为空
+			</span>
+		</div>
+		<div class="loginPassword">
+			<input type="password" name="inputPassword" ng-model='inputPassword'  value="" placeholder="请输入您的密码" ng-minlength='6' ng-maxlength='18' required>
+			<span ng-show='loginForm.inputPassword.$dirty && loginForm.inputPassword.$error.required'>密码不能为空</span>
+			<span ng-show='loginForm.inputPassword.$error.minlength && loginForm.inputPassword.$dirty'>密码输入错误</span>
+			<a ui-sref="findPassword" class="loginForgetPassword">忘记密码？</a>
+		</div>		
+			<a ui-sref="personCenter.personHomepage" class="white page-login block">登录</a>
+			<div class="rememberMe">
+				<input  type="checkbox" name="" value="" placeholder="">
+			    <span>记住我</span>
+			</div>
+			
+			<div class="otherLogin">
+				<span>第三方登录</span>
+				<div class="otherLogin-logo">
+					 <a href="#" title=""><img src="img/wechat.png" alt=""></a>
+			         <a href="#" title=""><img src="img/qq.png" alt=""></a>
+			         <a href="#" title=""><img src="img/sina.png" alt=""></a>
+				</div> 
+			</div>
+	</div>
+		<div class="register">
+			<span>新用户？</span><a ui-sref="register" title="">立即注册</a>
+		</div>
+	</form>
+</div>

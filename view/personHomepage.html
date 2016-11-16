@@ -1,0 +1,51 @@
+<div class="personHomepage-my">
+     <p class="f12 fb lh3"><span></span>我关注的项目</p>
+     <div class="clear">
+	     <div class="show fl clear" ng-repeat="item in myAttentionShow">
+	     	<img class="fl" ng-src="{{item.imgUrl}}" alt="">
+	     	<div class="fl img-right f12 lh2">
+	     		<span class="fb f14">{{item.title}}</span>
+		     	<p>by {{item.author}}</p>
+		     	<div class="progress-total">
+		     		<div class="progress" ng-style="{width:item.progress}">
+		     			
+		     		</div>
+		     	</div>
+		     	<div class="cost">
+		     		<span>以筹资</span><span class="fb f12">{{item.cost}}</span>
+		     	</div>
+	     	</div>
+	     </div>
+     </div>
+</div>
+<div class="personHomepage-hot clear">
+	<p class="f12 fb lh3"><span></span>当前最热</p>
+	<div>
+	<div class="showBox f11 gray lh2" ng-repeat="item in myAttentionShow | limitTo:3">
+		<a class="block" ui-sref="detail({id:item.id})"><img ng-src="{{item.imgUrl}}" alt=""></a>
+		<h1><a class="f14 fb black" ui-sref="detail({id:item.id})">{{item.title}}</a></h1>
+		<p>by {{item.author}}</p>
+		<p class="homepage-recommend-detail">{{item.detail}}</p>
+		<p>{{item.sort}}</p>
+		<div class="progress-total">
+			<div class="progress" style="width:{{item.progress}}">
+			</div>
+		</div>
+		<div class="clear">
+			<div class="message">
+				<p class="f16 fb black">{{item.progress}}</p>
+				<p>进度</p>
+			</div>
+			<div class="message">
+				<p class="f16 fb black">{{item.cost}}</p>
+				<p>支持金额</p>
+			</div>
+			<div class="message">
+				<p class="f16 fb black">{{item.day}}</p>
+				<p>剩余天数</p>
+			</div>
+		</div>	
+	</div>
+	</div>
+	
+</div>
